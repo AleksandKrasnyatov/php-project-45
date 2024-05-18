@@ -1,5 +1,8 @@
 {
     "name": "hexlet/code",
+    "bin": [
+        "bin/brain-games"
+      ],
     "description": "hexlet first project",
     "require": {}
 }
