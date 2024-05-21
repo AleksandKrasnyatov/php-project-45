@@ -1,14 +1,18 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/brain-games"
+        "bin/brain-games",
+        "bin/brain-even"
       ],
     "description": "hexlet first project",
     "require": {
         "wp-cli/php-cli-tools": "^0.11.22"
     },
     "autoload": {
-        "files": [ "src/Cli.php" ]
+        "files": [ 
+            "src/Cli.php",
+            "src/Even.php"
+        ]
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
