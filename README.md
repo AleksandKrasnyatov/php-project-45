@@ -6,5 +6,5 @@
 ### Asciinema recording of "brain-even" game:
 https://asciinema.org/a/PCQzoufwucQ04D8OkoKLOxQuj
 
-### Asciinema recording of "brain-even" game:
+### Asciinema recording of "brain-calc" game:
 https://asciinema.org/a/8oNUw5agIQJKcNcmWKPAhjAFV
