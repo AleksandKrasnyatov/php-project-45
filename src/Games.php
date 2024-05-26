@@ -13,6 +13,7 @@ use function BrainGames\Engine\getCorrectAnswerCalc;
 use function BrainGames\Engine\getCorrectAnswerEven;
 use function BrainGames\Engine\getCorrectAnswerGcd;
 use function BrainGames\Engine\getExpressionCalc;
+use function BrainGames\Engine\getCorrectAnswerPrime;
 use function BrainGames\Engine\askQuestion;
 use function BrainGames\Engine\checkAnswer;
 use function BrainGames\Engine\wrongAnswePhrase;
@@ -129,6 +130,35 @@ function progression()
         $experssion = implode(' ', $progression);
 
         askQuestion($experssion);
+        $userAnswer = getAnswer();
+
+        if (checkAnswer($userAnswer, $correctAnswer)) {
+            line("Correct!");
+        } else {
+            $congrats = false;
+            wrongAnswePhrase($userAnswer, $correctAnswer, $name);
+            break;
+        }
+    }
+    if ($congrats) {
+        congratsPhrase($name);
+    }
+}
+
+function prime()
+{
+    askName();
+    $name = getName();
+    hello($name);
+
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
+
+    $congrats = true;
+    for ($i = 0; $i < 3; $i++) {
+        $int = rand(1, 100);
+        $correctAnswer = getCorrectAnswerPrime($int);
+        
+        askQuestion($int);
         $userAnswer = getAnswer();
 
         if (checkAnswer($userAnswer, $correctAnswer)) {

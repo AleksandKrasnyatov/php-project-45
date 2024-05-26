@@ -65,6 +65,26 @@ function getCorrectAnswerEven(int $int)
     return 'no';
 }
 
+function getCorrectAnswerPrime(int $int)
+{
+    if (isPrime($int)) {
+        return 'yes';
+    }
+    return 'no';
+}
+
+function isPrime(int $int)
+{
+    if (isEven($int)) {
+        return false;
+    }
+    $allDivisors = getAllDivisors($int);
+    if (count($allDivisors) === 2) {
+        return true;
+    }
+    return false;
+}
+
 function isEven(int $int)
 {
     return $int % 2 === 0;
