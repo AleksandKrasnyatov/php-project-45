@@ -17,3 +17,7 @@ https://asciinema.org/a/Yt2I3WzgZR8xZy4deHXGHFr4W
 
 ## Asciinema recording of "brain-prime" game:
 https://asciinema.org/a/XCm6ZmoSTbr0lb2RAlofB9TBr
+
+In this project you can play 5 math games in console.
+
+To start you can run "make install", and after that try games by commands like "make brain-prime".
