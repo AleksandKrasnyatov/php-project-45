@@ -2,14 +2,14 @@
 
 namespace BrainGames\Games\Gcd;
 
-use function BrainGames\Engine\askName;
-use function BrainGames\Engine\getName;
+use function BrainGames\Engine\getCorrectAnswerGcd;
 use function BrainGames\Engine\hello;
 use function BrainGames\Engine\getAnswer;
-use function BrainGames\Engine\getCorrectAnswerGcd;
 use function BrainGames\Engine\askQuestion;
 use function cli\line;
 use function BrainGames\Engine\checkAnswer;
+use function BrainGames\Engine\askName;
+use function BrainGames\Engine\getName;
 use function BrainGames\Engine\wrongAnswePhrase;
 use function BrainGames\Engine\congratsPhrase;
 
