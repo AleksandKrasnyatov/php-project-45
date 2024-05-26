@@ -25,7 +25,6 @@ function game()
     for ($i = 0; $i < 3; $i++) {
         $int = rand(1, 100);
         $correctAnswer = getCorrectAnswerPrime($int);
-        
         askQuestion($int);
         $userAnswer = getAnswer();
 

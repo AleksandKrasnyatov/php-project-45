@@ -23,7 +23,6 @@ function game()
 
     $congrats = true;
     for ($i = 0; $i < 3; $i++) {
-
         $lenght = rand(5, 15);
         $key = rand(0, ($lenght - 1));
         $progression = getProgression($lenght);
@@ -47,4 +46,3 @@ function game()
         congratsPhrase($name);
     }
 }
-

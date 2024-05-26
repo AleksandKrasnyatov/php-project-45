@@ -52,8 +52,8 @@ function getCorrectAnswerCalc($int1, $int2, $sign)
             return $int1 + $int2;
         case "*":
             return $int1 * $int2;
-        default: 
-            return null; 
+        default:
+            return null;
     }
 }
 
@@ -112,7 +112,7 @@ function getCorrectAnswerGcd(int $int1, int $int2)
 function getAllDivisors(int $int)
 {
     $result = [];
-    for ($i = 1; $i <= $int / 2; $i++ ) {
+    for ($i = 1; $i <= $int / 2; $i++) {
         if ($int % $i === 0) {
             $result[] = $i;
         }
@@ -127,7 +127,7 @@ function getProgression(int $count)
     $first = rand(1, 10);
     $step = rand(1, 10);
     $lenght = $step * ($count - 1) + $first;
-    for ($i = $first ; $i <= $lenght; $i += $step) {
+    for ($i = $first; $i <= $lenght; $i += $step) {
         $progression[] = $i;
     }
     return $progression;
