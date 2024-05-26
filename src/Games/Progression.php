@@ -2,8 +2,8 @@
 
 namespace BrainGames\Games\Progression;
 
-use function cli\line;
 use function BrainGames\Engine\askName;
+use function cli\line;
 use function BrainGames\Engine\getName;
 use function BrainGames\Engine\hello;
 use function BrainGames\Engine\getProgression;
@@ -13,7 +13,7 @@ use function BrainGames\Engine\checkAnswer;
 use function BrainGames\Engine\wrongAnswePhrase;
 use function BrainGames\Engine\congratsPhrase;
 
-function game()
+function progression()
 {
     askName();
     $name = getName();

@@ -15,12 +15,12 @@ function getName()
     return prompt('May I have your name?');
 }
 
-function hello($name)
+function hello(string $name)
 {
     line("Hello, %s!", $name);
 }
 
-function askQuestion($question)
+function askQuestion(string $question)
 {
     line('Question: %s', $question);
 }
@@ -30,12 +30,12 @@ function getAnswer()
     return prompt('Your answer:');
 }
 
-function checkAnswer($userAnswer, $correctAnswer)
+function checkAnswer(string $userAnswer, string $correctAnswer)
 {
     return $userAnswer == $correctAnswer;
 }
 
-function wrongAnswePhrase($userAnswer, $correctAnswer, $name)
+function wrongAnswePhrase(string $userAnswer, string $correctAnswer, string $name)
 {
     $message = "'" . $userAnswer . "'" . " is wrong answer ;(." . " Correct answer was " . "'" . $correctAnswer . "'.";
 
@@ -43,7 +43,7 @@ function wrongAnswePhrase($userAnswer, $correctAnswer, $name)
     line("Let's try again, %s!)", $name);
 }
 
-function getCorrectAnswerCalc($int1, $int2, $sign)
+function getCorrectAnswerCalc(int $int1, int $int2, string $sign)
 {
     switch ($sign) {
         case "-":
@@ -133,12 +133,12 @@ function getProgression(int $count)
     return $progression;
 }
 
-function getExpressionCalc($int1, $int2, $sign)
+function getExpressionCalc(int $int1, int $int2, string $sign)
 {
     return $int1 . ' ' . $sign . ' ' . $int2;
 }
 
-function congratsPhrase($name)
+function congratsPhrase(string $name)
 {
     line("Congratulations, %s!)", $name);
 }
