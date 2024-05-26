@@ -4,7 +4,6 @@ namespace BrainGames\Games\Even;
 
 use function BrainGames\Engine\getCorrectAnswerEven;
 use function BrainGames\Engine\congratsPhrase;
-use function BrainGames\Engine\welcome;
 use function BrainGames\Engine\checkAnswer;
 use function BrainGames\Engine\askName;
 use function BrainGames\Engine\getName;
@@ -17,7 +16,9 @@ use function BrainGames\Engine\wrongAnswePhrase;
 
 function even()
 {
-    $name = welcome();
+    askName();
+    $name = getName();
+    hello($name);
 
     line('Answer "yes" if the number is even, otherwise answer "no".');
 

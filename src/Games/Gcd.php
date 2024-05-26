@@ -4,7 +4,6 @@ namespace BrainGames\Games\Gcd;
 
 use function BrainGames\Engine\getCorrectAnswerGcd;
 use function BrainGames\Engine\hello;
-use function BrainGames\Engine\welcome;
 use function BrainGames\Engine\getAnswer;
 use function BrainGames\Engine\askQuestion;
 use function cli\line;
@@ -16,7 +15,9 @@ use function BrainGames\Engine\congratsPhrase;
 
 function gcd()
 {
-    $name = welcome();
+    askName();
+    $name = getName();
+    hello($name);
 
     line('Find the greatest common divisor of given numbers.');
 

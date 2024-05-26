@@ -8,7 +8,6 @@ use function BrainGames\Engine\getAnswer;
 use function BrainGames\Engine\askName;
 use function BrainGames\Engine\getName;
 use function BrainGames\Engine\askQuestion;
-use function BrainGames\Engine\welcome;
 use function BrainGames\Engine\checkAnswer;
 use function cli\line;
 use function BrainGames\Engine\wrongAnswePhrase;
@@ -16,7 +15,9 @@ use function BrainGames\Engine\congratsPhrase;
 
 function prime()
 {
-    $name = welcome();
+    askName();
+    $name = getName();
+    hello($name);
 
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
 

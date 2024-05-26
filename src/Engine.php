@@ -5,14 +5,6 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
-function welcome()
-{
-    askName();
-    $name = getName();
-    hello($name);
-    return $name;
-}
-
 function askName()
 {
     line('Welcome to the Brain Games!');
