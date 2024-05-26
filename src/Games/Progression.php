@@ -9,6 +9,7 @@ use function BrainGames\Engine\askName;
 use function cli\line;
 use function BrainGames\Engine\getName;
 use function BrainGames\Engine\hello;
+use function BrainGames\Engine\welcome;
 use function BrainGames\Engine\getAnswer;
 use function BrainGames\Engine\askQuestion;
 use function BrainGames\Engine\checkAnswer;
@@ -17,9 +18,7 @@ use function BrainGames\Engine\congratsPhrase;
 
 function progression()
 {
-    askName();
-    $name = getName();
-    hello($name);
+    $name = welcome();
 
     line('What number is missing in the progression?');
 

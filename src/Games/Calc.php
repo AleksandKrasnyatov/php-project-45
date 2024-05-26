@@ -7,6 +7,7 @@ use function BrainGames\Engine\getCorrectAnswerCalc;
 use function BrainGames\Engine\askQuestion;
 use function BrainGames\Engine\getRandSign;
 use function BrainGames\Engine\askName;
+use function BrainGames\Engine\welcome;
 use function BrainGames\Engine\getName;
 use function BrainGames\Engine\hello;
 use function cli\line;
@@ -17,9 +18,7 @@ use function BrainGames\Engine\congratsPhrase;
 
 function calc()
 {
-    askName();
-    $name = getName();
-    hello($name);
+    $name = welcome();
 
     line('What is the result of the expression?');
 
