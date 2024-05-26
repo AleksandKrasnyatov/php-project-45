@@ -10,6 +10,7 @@ use function BrainGames\Engine\getRandSign;
 use function BrainGames\Engine\getAnswer;
 use function BrainGames\Engine\getCorrectAnswerCalc;
 use function BrainGames\Engine\getCorrectAnswerEven;
+use function BrainGames\Engine\getCorrectAnswerGcd;
 use function BrainGames\Engine\getExpression;
 use function BrainGames\Engine\askQuestion;
 use function BrainGames\Engine\checkAnswer;
@@ -63,6 +64,36 @@ function even()
         $correctAnswer = getCorrectAnswerEven($int);
 
         askQuestion($int);
+        $userAnswer = getAnswer();
+
+        if (checkAnswer($userAnswer, $correctAnswer)) {
+            line("Correct!");
+        } else {
+            $congrats = false;
+            wrongAnswePhrase($userAnswer, $correctAnswer, $name);
+            break;
+        }
+    }
+    if ($congrats) {
+        congratsPhrase($name);
+    }
+}
+
+function gcd()
+{
+    askName();
+    $name = getName();
+    hello($name);
+
+    line('Find the greatest common divisor of given numbers.');
+
+    $congrats = true;
+    for ($i = 0; $i < 3; $i++) {
+        $int1 = rand(1, 50);
+        $int2 = rand(1, 100);
+        $correctAnswer = getCorrectAnswerGcd($int1, $int2);
+        $experssion = $int1 . ' ' . $int2;
+        askQuestion($experssion);
         $userAnswer = getAnswer();
 
         if (checkAnswer($userAnswer, $correctAnswer)) {

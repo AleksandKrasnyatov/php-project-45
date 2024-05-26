@@ -59,11 +59,48 @@ function getCorrectAnswerCalc($int1, $int2, $sign)
 
 function getCorrectAnswerEven(int $int)
 {
-    if ($int % 2 === 0) {
+    if (isEven($int)) {
         return 'yes';
     }
     return 'no';
 }
+
+function isEven(int $int)
+{
+    return $int % 2 === 0;
+}
+
+function getCorrectAnswerGcd(int $int1, int $int2)
+{
+    $biggerInt = $int1;
+    $smallerInt = $int2;
+    if ($int1 < $int2) {
+        $biggerInt = $int2;
+        $smallerInt = $int1;
+    }
+
+    $allDivisors = getAllDivisors($smallerInt);
+    rsort($allDivisors);
+
+    foreach ($allDivisors as $divisor) {
+        if ($biggerInt % $divisor === 0) {
+            return $divisor;
+        }
+    }
+}
+
+function getAllDivisors(int $int)
+{
+    $result = [];
+    for ($i = 1; $i <= $int / 2; $i++ ) {
+        if ($int % $i === 0) {
+            $result[] = $i;
+        }
+    }
+    $result[] = $int;
+    return $result;
+}
+
 
 function getExpression($int1, $int2, $sign)
 {

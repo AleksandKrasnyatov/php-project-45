@@ -8,3 +8,6 @@ https://asciinema.org/a/PCQzoufwucQ04D8OkoKLOxQuj
 
 ### Asciinema recording of "brain-calc" game:
 https://asciinema.org/a/8oNUw5agIQJKcNcmWKPAhjAFV
+
+### Asciinema recording of "brain-gcd" game:
+https://asciinema.org/a/11IQhnoFYqpdAraQdNKoOtfZL
