@@ -11,3 +11,6 @@ https://asciinema.org/a/8oNUw5agIQJKcNcmWKPAhjAFV
 
 ### Asciinema recording of "brain-gcd" game:
 https://asciinema.org/a/11IQhnoFYqpdAraQdNKoOtfZL
+
+### Asciinema recording of "brain-progression" game:
+https://asciinema.org/a/Yt2I3WzgZR8xZy4deHXGHFr4W

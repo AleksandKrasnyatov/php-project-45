@@ -101,8 +101,19 @@ function getAllDivisors(int $int)
     return $result;
 }
 
+function getProgression(int $count)
+{
+    $progression = [];
+    $first = rand(1, 10);
+    $step = rand(1, 10);
+    $lenght = $step * ($count - 1) + $first;
+    for ($i = $first ; $i <= $lenght; $i += $step) {
+        $progression[] = $i;
+    }
+    return $progression;
+}
 
-function getExpression($int1, $int2, $sign)
+function getExpressionCalc($int1, $int2, $sign)
 {
     return $int1 . ' ' . $sign . ' ' . $int2;
 }
