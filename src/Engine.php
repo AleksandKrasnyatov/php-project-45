@@ -75,7 +75,7 @@ function getCorrectAnswerPrime(int $int)
 
 function isPrime(int $int)
 {
-    if (isEven($int)) {
+    if (isEven($int) && $int !== 2) {
         return false;
     }
     $allDivisors = getAllDivisors($int);

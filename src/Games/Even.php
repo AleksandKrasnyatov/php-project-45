@@ -13,7 +13,6 @@ use function BrainGames\Engine\getAnswer;
 use function BrainGames\Engine\askQuestion;
 use function BrainGames\Engine\wrongAnswePhrase;
 
-
 function even()
 {
     askName();
