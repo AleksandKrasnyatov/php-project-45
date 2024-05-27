@@ -20,7 +20,7 @@ function hello(string $name)
     line("Hello, %s!", $name);
 }
 
-function askQuestion(string $question)
+function askQuestion(mixed $question)
 {
     line('Question: %s', $question);
 }
